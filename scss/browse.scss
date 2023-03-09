@@ -1,0 +1,65 @@
+.hero.browse {
+    background-image: linear-gradient(rgba(167, 232, 189, 0.75) rgba(167, 232, 189, 0.75)),
+        url(../images/recipe-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .gallery-container {
+        width: 80%;
+        margin-top: 200px;
+        margin-bottom: 200px;
+
+        .gallery-header {
+            font-family: caveat-bold;
+            font-size: 25px;
+            margin-bottom: 52px;
+        }
+
+        .gallery-list {
+            width: 100%;
+            min-height: 576px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 50px;
+
+            .gallery-card {
+                display: flex;
+
+                .gallery-image, img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 24px;
+                    object-fit: cover;
+                }
+
+                .gallery-desc {
+                    width: 150px;
+                    height: 200px;
+                    border-radius: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    text-align: center;
+                    font-family: lato-regular;
+                    background-color: white;
+
+                    .gallery-title {
+                        height: 30px;
+                        border-bottom: solid 3px black;
+
+                        h2 {
+                            font-size: 15;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

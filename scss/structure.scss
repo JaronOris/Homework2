@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+    margin-bottom: 16px;
+}
+
+@font-face {
+    font-family: caveat-regular;
+    src: url(../css/fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+    font-family: caveat-bold;
+    src: url(../css/fonts/Caveat-Bold.ttf);
+}
+
+@font-face {
+    font-family: lato-regular;
+    src: url(../css/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: lato-italic;
+    src: url(../css/fonts/Lato-Italic.ttf);
+}
+
+.container {
+    height: 100vh;
+}
+
+.container.full {
+    width: 100%;
+}
+
+.container.pillar {
+    width: 75%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 960px) {
+    .burger {
+        display: block !important;
+    }
+
+    .nav-container {
+        max-width: 30px;
+    }
+
+    .links {
+        width: 100% !important;
+        flex-direction: column;
+        opacity: 0;
+        background-color: rgba(255, 255, 255, .75);
+        position: absolute;
+        left: 0;
+        margin-top: 60px;
+    }
+
+    .login {
+        display: none !important;
+    }
+}
